@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Stack();
+    return Container(
+      child: Text("Landing"),
+    );
   }
 }
