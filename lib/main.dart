@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/top_bar.dart';
 import 'package:my_portfolio/landing.dart';
 import 'package:my_portfolio/about_me.dart';
 import 'package:my_portfolio/education.dart';
@@ -17,17 +18,17 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.lightBlue,
       ),
-      home: RandomWords(),
+      home: Portfolio(),
     );
   }
 }
 
-class RandomWords extends StatefulWidget {
+class Portfolio extends StatefulWidget {
   @override
-  _RandomWordsState createState() => _RandomWordsState();
+  _PortfolioState createState() => _PortfolioState();
 }
 
-class _RandomWordsState extends State<RandomWords> {
+class _PortfolioState extends State<Portfolio> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,6 +36,7 @@ class _RandomWordsState extends State<RandomWords> {
         scrollDirection: Axis.vertical,
         child: Column(
           children: <Widget>[
+            TopBar(),
             LandingPage(),
             AboutMe(),
             Education(),
