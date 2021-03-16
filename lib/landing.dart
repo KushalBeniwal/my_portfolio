@@ -6,7 +6,7 @@ class LandingPage extends StatelessWidget {
     return Container(
         width: MediaQuery.of(context).size.width,
         height: 700,
-        color: Colors.white,
+        color: Colors.blueGrey.shade50,
         // child: Stack(children: <Widget>[
         //   CustomPaint(
         //     size: Size.infinite,

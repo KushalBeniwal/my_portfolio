@@ -14,11 +14,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Kushal Beniwal",
+      title: "KushalBeniwal",
       theme: ThemeData(
-        primaryColor: Colors.lightBlue,
+        primaryColor: Colors.white,
       ),
-      home: Portfolio(),
+      home: MouseRegion(
+        child:  Portfolio(),
+      ),
     );
   }
 }

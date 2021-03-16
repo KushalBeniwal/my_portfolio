@@ -8,7 +8,6 @@ class TopBar extends StatelessWidget {
       child: AppBar(
         toolbarHeight: 130,
         elevation: 0,
-        backgroundColor: Colors.white,
         leadingWidth: 350,
         leading: Center(
           child: Text("Kushal",
