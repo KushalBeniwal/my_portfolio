@@ -9,7 +9,7 @@ class AboutMe extends StatelessWidget {
 
     return Container(
       color: Colors.white,
-      height: _height * 1.2,
+      height: _height,
       width: _width,
       child: Stack(
         children: <Widget>[
@@ -27,14 +27,27 @@ class AboutMe extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   Container(
-                    child: Text("About Me",
-                        textScaleFactor: 3, style: GoogleFonts.seaweedScript()),
+                    // color: Colors.amber, // remove
+                    child: Text("Hola!  ",
+                        textScaleFactor: 4, 
+                        style: GoogleFonts.seaweedScript()),
                   ),
                   Container(
-                    child: Text(
-                        "bla bla bla \nbla bla bla \nbla bla bla \nbla bla bla",
-                        textScaleFactor: 1.5,
-                        style: GoogleFonts.seaweedScript()),
+                    // color: Colors.deepPurple,
+                    padding: EdgeInsets.only(
+                      left: 35,
+                      right: 50,
+                      top: 10,
+                      bottom: 10,
+                    ),
+                    child: Center(
+                      child: Text(
+                        "My name is Kushal. I am a second year undergraduate from India. " +
+                        "I love exploring new technologies and I am always up for new experiences and opportunities.\n" +
+                        "Pronouns: she/her",
+                        textScaleFactor: 1.2,
+                        style: GoogleFonts.notoSerif()),
+                    ),
                   ),
                 ],
               ),

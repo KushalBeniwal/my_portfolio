@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/top_bar.dart';
 import 'package:my_portfolio/landing.dart';
 import 'package:my_portfolio/about_me.dart';
 import 'package:my_portfolio/education.dart';
@@ -38,7 +37,6 @@ class _PortfolioState extends State<Portfolio> {
         scrollDirection: Axis.vertical,
         child: Column(
           children: <Widget>[
-            TopBar(),
             LandingPage(),
             AboutMe(),
             Education(),
