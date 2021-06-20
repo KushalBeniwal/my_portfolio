@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'utils/avatar.dart';
+
 import 'utils/social_link_img.dart';
 
 class AboutMe extends StatelessWidget {
@@ -100,19 +102,7 @@ class AboutMe extends StatelessWidget {
             ),
           ),
           Padding(padding: EdgeInsets.only(left: _width / 10)),
-          Container(
-            color: Colors.yellow,
-            height: _height,
-            width: _width / 5,
-            child: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/my_photo1.png'),
-                ),
-                shape: BoxShape.circle,
-              ),
-            ),
-          )
+          Avatar(),
         ],
       ),
     );
