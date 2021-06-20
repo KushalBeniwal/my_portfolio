@@ -6,8 +6,8 @@ class Avatar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 250,
-      width: 250,
+      height: 300,
+      width: 300,
       child: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
