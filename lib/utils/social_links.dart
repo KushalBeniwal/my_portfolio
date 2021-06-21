@@ -12,17 +12,28 @@ class SocialLinks extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          SocialLinkIcon(
-              icon: Icon(Icons.mail), url: 'mailto:kbeniwal2305@gmail.com'),
-          SocialLinkIcon(
-              icon: FaIcon(FontAwesomeIcons.github),
-              url: 'https://github.com/KushalBeniwal'),
-          SocialLinkIcon(
-              icon: FaIcon(FontAwesomeIcons.linkedin),
-              url: 'https://linkedin.com/in/KushalBeniwal'),
-          SocialLinkIcon(
-              icon: FaIcon(FontAwesomeIcons.twitter),
-              url: 'https://twitter.com/__cielo_O')
+          Tooltip(
+            message: 'mailto:kbeniwal2305@gmail.com',
+            child: SocialLinkIcon(
+                icon: Icon(Icons.mail), url: 'mailto:kbeniwal2305@gmail.com'),
+          ),
+          Tooltip(
+            message: 'https://github.com/KushalBeniwal',
+            child: SocialLinkIcon(
+                icon: FaIcon(FontAwesomeIcons.github),
+                url: 'https://github.com/KushalBeniwal'),
+          ),
+          Tooltip(
+            message: 'https://linkedin.com/in/KushalBeniwal',
+            child: SocialLinkIcon(
+                icon: FaIcon(FontAwesomeIcons.linkedin),
+                url: 'https://linkedin.com/in/KushalBeniwal'),
+          ),
+          Tooltip(
+              message: 'https://twitter.com/__cielo_O',
+              child: SocialLinkIcon(
+                  icon: FaIcon(FontAwesomeIcons.twitter),
+                  url: 'https://twitter.com/__cielo_O')),
         ],
       ),
     );
