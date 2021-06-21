@@ -41,7 +41,12 @@ class _PortfolioState extends State<Portfolio> {
           child: Column(
             children: <Widget>[
               LandingPage(),
-              AboutMe(),
+              Container(
+                child: FittedBox(
+                  fit: BoxFit.fitWidth,
+                  child: AboutMe(),
+                )
+              ),
               Education(),
               Achievements(),
               Skills(),

@@ -16,8 +16,8 @@ class _AboutMeState extends State<AboutMe> {
   Widget build(BuildContext context) {
 
     return Container(
-      height: 550,
-      margin: EdgeInsets.only(top: 200),
+      height: 600,
+      margin: EdgeInsets.only(top: 200, left: 50, right: 50),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
