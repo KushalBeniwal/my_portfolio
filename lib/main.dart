@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.white,
       ),
       home: MouseRegion(
-        child:  Portfolio(),
+        child: Portfolio(),
       ),
       debugShowCheckedModeBanner: false,
     );
@@ -33,19 +33,22 @@ class Portfolio extends StatefulWidget {
 class _PortfolioState extends State<Portfolio> {
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
-        child: Column(
-          children: <Widget>[
-            LandingPage(),
-            AboutMe(),
-            Education(),
-            Achievements(),
-            Skills(),
-            Contact(),
-            BottomBar(),
-          ],
+        child: Container(
+          child: Column(
+            children: <Widget>[
+              LandingPage(),
+              AboutMe(),
+              Education(),
+              Achievements(),
+              Skills(),
+              Contact(),
+              BottomBar(),
+            ],
+          ),
         ),
       ),
     );
