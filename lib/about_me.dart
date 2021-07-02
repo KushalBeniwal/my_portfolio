@@ -5,7 +5,7 @@ import 'utils/greeting.dart';
 import 'utils/social_links.dart';
 
 class AboutMe extends StatefulWidget {
-  const AboutMe({ Key? key }) : super(key: key);
+  const AboutMe({Key? key}) : super(key: key);
 
   @override
   _AboutMeState createState() => _AboutMeState();
@@ -14,7 +14,7 @@ class AboutMe extends StatefulWidget {
 class _AboutMeState extends State<AboutMe> {
   @override
   Widget build(BuildContext context) {
-
+    double _width = MediaQuery.of(context).size.width;
     return Container(
       height: 600,
       margin: EdgeInsets.only(top: 200, left: 50, right: 50),
@@ -23,7 +23,7 @@ class _AboutMeState extends State<AboutMe> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Avatar(),
-          Padding(padding: EdgeInsets.all(150)),
+          Padding(padding: EdgeInsets.all((_width > 1200) ? 150 : 50)),
           Info(),
         ],
       ),
